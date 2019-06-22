@@ -38,6 +38,9 @@ module.exports = {
                         limit: 2037
                     }
                 }]
+            },{
+                test: /\.(ttf|eot|svg|woff|woff2)$/,
+                use: [ 'url-loader']
             },
             { //npm install -D @babel/core @babel/preset-env @babel/plugin-transform-runtime @babel/polyfill babel-loader
                 //babel转换
